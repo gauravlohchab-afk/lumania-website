@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home &mdash; Serenova Wellness</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-left">
+        <span>&#128205; 123 Wellness Ave, BGC, Taguig City, Metro Manila</span>
+        <span class="divider">|</span>
+        <a href="mailto:hello@serenova.ph">&#9993; hello@serenova.ph</a>
+      </div>
+      <div class="top-bar-right">
+        <div class="top-bar-social">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">in</a>
+          <a href="#" aria-label="Twitter">tw</a>
+          <a href="#" aria-label="Google">g+</a>
+          <a href="#" aria-label="LinkedIn">li</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+          <span class="logo-script">Serenova</span>
+          <span class="logo-sub">Wellness &amp; Beauty</span>
+        </a>
+        <ul class="nav-menu" id="navMenu">
+          <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item">
+            <a href="services.html" class="nav-link">Services &#9662;</a>
+            <div class="dropdown">
+              <a href="services.html">All Services</a>
+              <a href="service-details.html">Service Detail</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="blog.html" class="nav-link">Blog &#9662;</a>
+            <div class="dropdown">
+              <a href="blog.html">Blog Listing</a>
+              <a href="blog-details.html">Blog Detail</a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link nav-book">Book Now</a></li>
+        </ul>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hero Section</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+font-family:'Inter Tight',sans-serif;
+}
+
+.animate-on-scroll-hidden {
+opacity:0;
+transform:translateY(20px);
+transition:opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.animate-on-scroll-visible{
+opacity:1;
+transform:translateY(0);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section class="relative bg-black text-white min-h-screen overflow-hidden">
+
+<!-- Background -->
+<div class="absolute inset-0">
+<img src="https://images.unsplash.com/photo-1666039547733-3fe5ca97d474?auto=format&fit=crop&w=1920&q=80"
+class="w-full h-full object-cover opacity-60">
+
+<div class="absolute inset-0 bg-gradient-to-b from-black/80 via-transparent to-black/90"></div>
+</div>
+
+
+<!-- Hero Content -->
+<div class="relative z-10 flex flex-col justify-center min-h-screen max-w-7xl mx-auto px-6 md:px-12">
+
+<div data-animation-on-scroll class="max-w-4xl">
+
+<h1 class="text-5xl md:text-6xl lg:text-7xl font-medium tracking-tight leading-[1.1] mb-8">
+
+Your journey to
+<span class="text-gray-400">holistic peace</span>
+
+<br>
+
+starts with a single
+intentional breath —
+
+<br>
+
+discover your sanctuary...
+
+</h1>
+
+
+<button class="group flex items-center gap-3 bg-white text-black pl-8 pr-3 py-3 rounded-full hover:bg-orange-200 transition-all">
+
+<span class="font-medium">Explore Retreats</span>
+
+<span class="bg-black text-white w-10 h-10 rounded-full flex items-center justify-center group-hover:translate-x-1 transition-transform">
+
+→
+
+</span>
+
+</button>
+
+</div>
+
+
+
+<!-- Floating Badge -->
+<div class="hidden md:flex absolute right-10 bottom-20 bg-white/10 backdrop-blur-xl border border-white/10 p-4 rounded-2xl items-center gap-4 max-w-xs animate-pulse">
+
+<div class="w-12 h-16 bg-orange-200 rounded-lg flex items-center justify-center">
+
+⭐
+
+</div>
+
+<div>
+
+<p class="text-xs text-gray-400 uppercase tracking-wider mb-1">Live Session</p>
+
+<p class="text-sm font-medium">Breathwork in Progress</p>
+
+</div>
+
+</div>
+
+
+
+<!-- Watermark -->
+<div class="absolute bottom-0 left-0 w-full overflow-hidden pointer-events-none">
+
+<h1 class="text-[10rem] md:text-[18rem] font-bold text-white/5 whitespace-nowrap leading-none -mb-10 tracking-tighter uppercase">
+
+Breathe
+
+</h1>
+
+</div>
+
+</div>
+
+</section>
+
+<script>
+
+document.addEventListener('DOMContentLoaded', () => {
+
+const observer = new IntersectionObserver((entries) => {
+
+entries.forEach(entry => {
+
+if (entry.isIntersecting) {
+
+entry.target.classList.add('animate-on-scroll-visible');
+
+}
+
+});
+
+});
+
+document.querySelectorAll('[data-animation-on-scroll]').forEach(el => {
+
+el.classList.add('animate-on-scroll-hidden');
+
+observer.observe(el);
+
+});
+
+});
+
+</script>
+
+</body>
+</html>
+
+  <!-- HERO STRIP -->
+  <div class="hero-strip">
+    <div class="container">
+      <div class="strip-item"><div class="strip-icon">&#127807;</div><span>Natural Ingredients</span></div>
+      <div class="strip-item"><div class="strip-icon">&#127942;</div><span>Award-Winning Clinic</span></div>
+      <div class="strip-item"><div class="strip-icon">&#10024;</div><span>Certified Specialists</span></div>
+      <div class="strip-item"><div class="strip-icon">&#128134;</div><span>Visible Results</span></div>
+      <div class="strip-item"><div class="strip-icon">&#128142;</div><span>Premium Experience</span></div>
+    </div>
+  </div>
+
+  <!-- CATEGORY STRIP -->
+  <div class="cat-strip">
+    <!-- <div class="container">
+      <a href="services.html" class="cat-item reveal delay-1"><div class="cat-icon">&#129529;</div><span class="cat-label">Skincare</span></a>
+      <a href="services.html" class="cat-item reveal delay-2"><div class="cat-icon">&#128134;</div><span class="cat-label">Facials</span></a>
+      <a href="services.html" class="cat-item reveal delay-3"><div class="cat-icon">&#128170;</div><span class="cat-label">Body Sculpt</span></a>
+      <a href="services.html" class="cat-item reveal delay-4"><div class="cat-icon">&#128133;</div><span class="cat-label">Nail Care</span></a>
+      <a href="services.html" class="cat-item reveal delay-5"><div class="cat-icon">&#127800;</div><span class="cat-label">Aromatherapy</span></a>
+      <a href="services.html" class="cat-item reveal delay-1"><div class="cat-icon">&#128135;</div><span class="cat-label">Hair Therapy</span></a>
+    </div> -->
+  </div>
+
+  <!-- FEATURE HIGHLIGHT SECTION (replaces old about section) -->
+  <section class="feature-section section">
+    <div class="feature-bg">
+      <!-- animated circles behind content -->
+      <div class="anim-circle c1"></div>
+      <div class="anim-circle c2"></div>
+      <div class="anim-circle c3"></div>
+    </div>
+    <div class="container">
+      <div class="feature-content">
+        <div class="feature-img-wrap reveal-left">
+          <div class="feature-img">
+            <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=700&q=85&fit=crop" alt="Wellness treatment at Serenova" loading="lazy" />
+          </div>
+        </div>
+        <div class="feature-text reveal-right">
+          <div class="feature-header">
+            <span class="tag">Experience Wellnez</span>
+            <span class="years">25 Years</span>
+          </div>
+          <h2 class="section-title">Body Treatments</h2>
+          <p class="section-sub">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          <a href="services.html" class="btn btn-primary">View More <span class="arrow">&#8594;</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section class="services-section section">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="tag">What We Offer</span>
+        <h2 class="section-title">Our <em>Signature</em> Treatments</h2>
+        <p class="section-sub">Expertly curated beauty and wellness services designed to restore, rejuvenate, and reveal your best self.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal delay-1">
+          <div class="service-img">
+            <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=600&q=80&fit=crop" alt="HIFU Facial" loading="lazy" />
+            <span class="service-cat">Bestseller</span>
+          </div>
+          <div class="service-body">
+            <h3>HIFU 7D Lifting Facial</h3>
+            <p>Non-surgical ultrasound treatment that firms, lifts, and tightens skin with zero downtime and visible results.</p>
+            <a href="service-details.html" class="service-link">Discover More &#8594;</a>
+          </div>
+        </div>
+        <div class="service-card reveal delay-2">
+          <div class="service-img">
+            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&q=80&fit=crop" alt="HydraFacial" loading="lazy" />
+            <span class="service-cat">Popular</span>
+          </div>
+          <div class="service-body">
+            <h3>Luxury HydraFacial</h3>
+            <p>Deep cleanse, exfoliate, and infuse skin with intensive hydration serums for an instant, lasting glow.</p>
+            <a href="service-details.html" class="service-link">Discover More &#8594;</a>
+          </div>
+        </div>
+        <div class="service-card reveal delay-3">
+          <div class="service-img">
+            <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=600&q=80&fit=crop" alt="Cryotherapy" loading="lazy" />
+          </div>
+          <div class="service-body">
+            <h3>Cryotherapy Sculpting</h3>
+            <p>Advanced cold therapy that eliminates fat cells, tightens skin, and boosts metabolism naturally.</p>
+            <a href="service-details.html" class="service-link">Discover More &#8594;</a>
+          </div>
+        </div>
+        <div class="service-card reveal delay-1">
+          <div class="service-img">
+            <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?w=600&q=80&fit=crop" alt="Carbon Laser" loading="lazy" />
+            <span class="service-cat">New</span>
+          </div>
+          <div class="service-body">
+            <h3>Carbon Laser Peel</h3>
+            <p>Targets acne, pigmentation, and dark spots for a dramatically brighter, smoother complexion.</p>
+            <a href="service-details.html" class="service-link">Discover More &#8594;</a>
+          </div>
+        </div>
+        <div class="service-card reveal delay-2">
+          <div class="service-img">
+            <img src="https://images.unsplash.com/photo-1560750588-73207b1ef5b8?w=600&q=80&fit=crop" alt="Hot Stone" loading="lazy" />
+          </div>
+          <div class="service-body">
+            <h3>Hot Stone Therapy</h3>
+            <p>Smooth heated basalt stones melt away tension, improve circulation, and deeply relax muscles.</p>
+            <a href="service-details.html" class="service-link">Discover More &#8594;</a>
+          </div>
+        </div>
+        <div class="service-card reveal delay-3">
+          <div class="service-img">
+            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&q=80&fit=crop" alt="Organic Facial" loading="lazy" />
+          </div>
+          <div class="service-body">
+            <h3>Organic Glow Facial</h3>
+            <p>A luxurious organic facial using botanical extracts to nourish, brighten, and plump the skin.</p>
+            <a href="service-details.html" class="service-link">Discover More &#8594;</a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center" style="margin-top:48px;">
+        <a href="services.html" class="btn btn-dark">View All Services <span class="arrow">&#8594;</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item reveal delay-1"><div class="stat-num" data-target="5000">0</div><div class="stat-label">Happy Clients</div></div>
+        <div class="stat-item reveal delay-2"><div class="stat-num" data-target="25">0</div><div class="stat-label">Years of Excellence</div></div>
+        <div class="stat-item reveal delay-3"><div class="stat-num" data-target="30">0</div><div class="stat-label">Expert Specialists</div></div>
+        <div class="stat-item reveal delay-4"><div class="stat-num" data-target="98">0</div><div class="stat-label">% Satisfaction Rate</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing-section section">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="tag">Pricing Plans</span>
+        <h2 class="section-title">Your Perfect <em>Package</em></h2>
+        <p class="section-sub">Choose a wellness package that perfectly fits your lifestyle and beauty goals.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="price-card reveal delay-1">
+          <div class="price-name">Basic</div>
+          <div class="price-title">Glow Starter</div>
+          <div class="price-amount">
+            <span class="currency">&#8369;</span><span class="amount">1,499</span>
+            <span class="period">per session</span>
+          </div>
+          <ul class="price-features">
+            <li>60-min Signature Facial</li>
+            <li>Basic Skin Assessment</li>
+            <li>Complimentary Mask</li>
+            <li>Post-care Consultation</li>
+            <li>Follow-up Reminder</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center;">Book Now</a>
+        </div>
+        <div class="price-card featured reveal delay-2">
+          <span class="price-badge">Most Popular</span>
+          <div class="price-name">Premium</div>
+          <div class="price-title">Radiance Package</div>
+          <div class="price-amount">
+            <span class="currency">&#8369;</span><span class="amount">3,999</span>
+            <span class="period">per month</span>
+          </div>
+          <ul class="price-features">
+            <li>4 Signature Treatments</li>
+            <li>Advanced Skin Analysis</li>
+            <li>HydraFacial Session</li>
+            <li>Body Scrub &amp; Wrap</li>
+            <li>Priority Booking</li>
+            <li>Product Samples</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center;">Book Now</a>
+        </div>
+        <div class="price-card reveal delay-3">
+          <div class="price-name">Luxury</div>
+          <div class="price-title">Transformation Plan</div>
+          <div class="price-amount">
+            <span class="currency">&#8369;</span><span class="amount">7,999</span>
+            <span class="period">per month</span>
+          </div>
+          <ul class="price-features">
+            <li>Unlimited Basic Services</li>
+            <li>HIFU Lifting Session</li>
+            <li>Carbon Laser Peel</li>
+            <li>Cryotherapy Session</li>
+            <li>VIP Lounge Access</li>
+            <li>Personal Beauty Coach</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center;">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPOINTMENT CTA -->
+  <section class="appt-section">
+    <div class="appt-bg" style="background-image:url('https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=1600&q=80&fit=crop')"></div>
+    <div class="appt-overlay"></div>
+    <div class="appt-content">
+      <div class="container">
+        <div class="appt-grid">
+          <div class="appt-left reveal-left">
+            <span class="tag">Book Today</span>
+            <h2 class="section-title">Book Appointment<br/><em>Today For Free</em></h2>
+            <p>Take the first step toward radiant beauty. Our specialists are ready to create a personalized treatment plan just for you.</p>
+            <div class="appt-info">
+              <div class="appt-info-item"><span class="appt-info-icon">&#128205;</span>123 Wellness Ave, BGC, Taguig City</div>
+              <div class="appt-info-item"><span class="appt-info-icon">&#128222;</span>+63 912 345 6789</div>
+              <div class="appt-info-item"><span class="appt-info-icon">&#9993;</span>hello@serenova.ph</div>
+              <div class="appt-info-item"><span class="appt-info-icon">&#9200;</span>Mon&ndash;Sun: 9:00 AM &ndash; 8:00 PM</div>
+            </div>
+            <a href="contact.html" class="btn btn-primary">Get Directions &#8594;</a>
+          </div>
+          <div class="appt-form reveal-right">
+            <h3>Make Appointment</h3>
+            <form onsubmit="event.preventDefault();this.innerHTML='<p style=color:#fff;text-align:center;font-size:1.1rem;padding:20px>&#10003; Your appointment request has been sent! We will contact you shortly.</p>'">
+              <div class="form-row">
+                <div class="form-group"><input type="text" class="form-control" placeholder="Your Full Name" required /></div>
+                <div class="form-group"><input type="email" class="form-control" placeholder="Email Address" required /></div>
+              </div>
+              <div class="form-row">
+                <div class="form-group"><input type="tel" class="form-control" placeholder="Phone Number" /></div>
+                <div class="form-group"><input type="date" class="form-control" /></div>
+              </div>
+              <div class="form-group">
+                <select class="form-control">
+                  <option value="" disabled selected>Select a Service</option>
+                  <option>HIFU 7D Lifting Facial</option>
+                  <option>Luxury HydraFacial</option>
+                  <option>Cryotherapy Sculpting</option>
+                  <option>Carbon Laser Peel</option>
+                  <option>Hot Stone Therapy</option>
+                  <option>Organic Glow Facial</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" rows="3" placeholder="Special requests or notes..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Confirm Appointment</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testi-section section">
+    <div class="container">
+      <div class="testi-header text-center reveal">
+        <span class="tag">Client Stories</span>
+        <h2 class="section-title">Our Top <em>Reviews</em></h2>
+        <p class="section-sub">Real stories from real people who transformed their beauty and wellness with Serenova.</p>
+      </div>
+      <div class="testi-track-wrap">
+        <div class="testi-track" id="testiTrack">
+          <div class="testi-card">
+            <div class="testi-quote">&ldquo;</div>
+            <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="testi-text">The HIFU treatment completely transformed my skin. After just one session, my face looked lifted and firmer. The staff were incredibly knowledgeable and made me feel so comfortable throughout the whole process.</p>
+            <div class="testi-author">
+              <div class="testi-avatar"><img src="https://images.unsplash.com/photo-1494790108755-2616b9a3b7b8?w=100&q=80&fit=crop&crop=face" alt="Maria Santos" /></div>
+              <div><span class="testi-name">Maria Santos</span><span class="testi-role">Marketing Manager, BGC</span></div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-quote">&ldquo;</div>
+            <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="testi-text">I&rsquo;ve tried many clinics before but Serenova is on another level. The HydraFacial gave me the most hydrated, glowing skin I&rsquo;ve ever had. I&rsquo;m a regular client now and I recommend it to absolutely everyone!</p>
+            <div class="testi-author">
+              <div class="testi-avatar"><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80&fit=crop&crop=face" alt="Patricia Reyes" /></div>
+              <div><span class="testi-name">Patricia Reyes</span><span class="testi-role">Fashion Designer, Makati</span></div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-quote">&ldquo;</div>
+            <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="testi-text">The Cryotherapy session was exactly what I needed. My body feels sculpted and my skin is noticeably tighter. The environment is so luxurious &mdash; it genuinely feels like a five-star international spa experience.</p>
+            <div class="testi-author">
+              <div class="testi-avatar"><img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=80&fit=crop&crop=face" alt="Kevin Alvarado" /></div>
+              <div><span class="testi-name">Kevin Alvarado</span><span class="testi-role">Fitness Coach, Taguig</span></div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-quote">&ldquo;</div>
+            <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="testi-text">Serenova changed how I feel about skincare. The Carbon Laser Peel erased years of sun damage in just 3 sessions. Every visit feels like a ritual of self-care &mdash; absolutely worth every peso! Will keep coming back.</p>
+            <div class="testi-author">
+              <div class="testi-avatar"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&q=80&fit=crop&crop=face" alt="Clarisse Mendoza" /></div>
+              <div><span class="testi-name">Clarisse Mendoza</span><span class="testi-role">Entrepreneur, Pasig</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-controls">
+        <button class="testi-btn" id="testiPrev" aria-label="Previous">&#8592;</button>
+        <button class="testi-btn" id="testiNext" aria-label="Next">&#8594;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="team-section section">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="tag">Our Members</span>
+        <h2 class="section-title">Expert <em>Beauticians</em></h2>
+        <p class="section-sub">Meet our certified professionals dedicated to your beauty and wellness journey.</p>
+      </div>
+      <div class="team-grid">
+        <div class="team-card reveal delay-1">
+          <div class="team-img">
+            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&q=80&fit=crop&crop=face" alt="Dr. Lena Cruz" loading="lazy" />
+            <div class="team-social"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="Instagram">ig</a></div>
+          </div>
+          <div class="team-name">Dr. Lena Cruz</div>
+          <div class="team-role">Founder &amp; Lead Dermatologist</div>
+        </div>
+        <div class="team-card reveal delay-2">
+          <div class="team-img">
+            <img src="https://images.unsplash.com/photo-1614608682850-e0d6ed316d47?w=400&q=80&fit=crop&crop=face" alt="Emily Johnson" loading="lazy" />
+            <div class="team-social"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="Instagram">ig</a></div>
+          </div>
+          <div class="team-name">Emily Johnson</div>
+          <div class="team-role">Senior Aesthetician</div>
+        </div>
+        <div class="team-card reveal delay-3">
+          <div class="team-img">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80&fit=crop&crop=face" alt="Arika Santos" loading="lazy" />
+            <div class="team-social"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="Instagram">ig</a></div>
+          </div>
+          <div class="team-name">Arika Santos</div>
+          <div class="team-role">Body Sculptor Specialist</div>
+        </div>
+        <div class="team-card reveal delay-4">
+          <div class="team-img">
+            <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=400&q=80&fit=crop&crop=face" alt="Rose Marian" loading="lazy" />
+            <div class="team-social"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="Instagram">ig</a></div>
+          </div>
+          <div class="team-name">Rose Marian</div>
+          <div class="team-role">Massage &amp; Spa Expert</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery-section section">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="tag">Our Gallery</span>
+        <h2 class="section-title">Treatment <em>Showcase</em></h2>
+        <p class="section-sub">A glimpse into our world of beauty, relaxation, and transformation.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item reveal delay-1">
+          <img class="gallery-img" src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800&q=80&fit=crop" alt="Thai Spa" loading="lazy" />
+          <div class="gallery-overlay"><span class="gallery-cat">Facial</span><span class="gallery-title">Thai Spa Treatment</span></div>
+        </div>
+        <div class="gallery-item reveal delay-2">
+          <img class="gallery-img" src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=500&q=80&fit=crop" alt="Glow Treatment" loading="lazy" />
+          <div class="gallery-overlay"><span class="gallery-cat">Skincare</span><span class="gallery-title">Glow Treatment</span></div>
+        </div>
+        <div class="gallery-item reveal delay-3">
+          <img class="gallery-img" src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=500&q=80&fit=crop" alt="Luxury Facial" loading="lazy" />
+          <div class="gallery-overlay"><span class="gallery-cat">Beauty</span><span class="gallery-title">Luxury Facial</span></div>
+        </div>
+        <div class="gallery-item reveal delay-4">
+          <img class="gallery-img" src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=500&q=80&fit=crop" alt="Deep Tissue Massage" loading="lazy" />
+          <div class="gallery-overlay"><span class="gallery-cat">Body</span><span class="gallery-title">Deep Tissue Massage</span></div>
+        </div>
+        <div class="gallery-item reveal delay-5">
+          <img class="gallery-img" src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?w=500&q=80&fit=crop" alt="Carbon Laser" loading="lazy" />
+          <div class="gallery-overlay"><span class="gallery-cat">Laser</span><span class="gallery-title">Carbon Laser Peel</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG PREVIEW -->
+  <section class="blog-section section">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="tag">Our Blog</span>
+        <h2 class="section-title">Latest <em>News &amp; Tips</em></h2>
+        <p class="section-sub">Stay informed with the latest in beauty, skincare science, and wellness insights from our experts.</p>
+      </div>
+      <div class="blog-grid">
+        <div class="blog-card reveal delay-1">
+          <div class="blog-img"><img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=600&q=80&fit=crop" alt="Blog 1" loading="lazy" /></div>
+          <div class="blog-body">
+            <div class="blog-meta"><span class="blog-cat">Skincare</span><span class="blog-date">March 10, 2025</span></div>
+            <h3><a href="blog-details.html">How to Improve Your Skin Health Through Daily Habits</a></h3>
+            <p>Discover the simple yet powerful habits that can transform your skin from dull to radiant in just a few weeks.</p>
+            <div class="blog-footer"><span class="blog-author">By Dr. Lena Cruz</span><a href="blog-details.html" class="read-more">Read More &#8594;</a></div>
+          </div>
+        </div>
+        <div class="blog-card reveal delay-2">
+          <div class="blog-img"><img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&q=80&fit=crop" alt="Blog 2" loading="lazy" /></div>
+          <div class="blog-body">
+            <div class="blog-meta"><span class="blog-cat">Wellness</span><span class="blog-date">February 20, 2025</span></div>
+            <h3><a href="blog-details.html">Body Spa Treatments for a Relaxing Wellness Holiday</a></h3>
+            <p>Explore the most rejuvenating body spa treatments that leave you feeling lighter, brighter, and deeply refreshed.</p>
+            <div class="blog-footer"><span class="blog-author">By Emily Johnson</span><a href="blog-details.html" class="read-more">Read More &#8594;</a></div>
+          </div>
+        </div>
+        <div class="blog-card reveal delay-3">
+          <div class="blog-img"><img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=600&q=80&fit=crop" alt="Blog 3" loading="lazy" /></div>
+          <div class="blog-body">
+            <div class="blog-meta"><span class="blog-cat">Beauty Tips</span><span class="blog-date">January 15, 2025</span></div>
+            <h3><a href="blog-details.html">The Ultimate Guide to Anti-Aging Facial Treatments</a></h3>
+            <p>From HIFU to carbon laser, learn which anti-aging treatments deliver the best results for every skin type.</p>
+            <div class="blog-footer"><span class="blog-author">By Arika Santos</span><a href="blog-details.html" class="read-more">Read More &#8594;</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center" style="margin-top:48px;"><a href="blog.html" class="btn btn-dark">View All Posts <span class="arrow">&#8594;</span></a></div>
+    </div>
+  </section>
+
+  <!-- INSTAGRAM -->
+  <section class="insta-section">
+    <div class="container text-center reveal" style="margin-bottom:28px;">
+      <span class="tag">Instagram</span>
+      <h3 style="font-family:var(--font-display);font-size:1.6rem;color:var(--dark);">Follow <em style="color:var(--primary);">@serenova.wellness</em></h3>
+    </div>
+    <div class="insta-grid">
+      <div class="insta-item"><img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=400&q=80&fit=crop" alt="Instagram 1" loading="lazy" /><div class="insta-overlay">&#128247;</div></div>
+      <div class="insta-item"><img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=400&q=80&fit=crop" alt="Instagram 2" loading="lazy" /><div class="insta-overlay">&#128247;</div></div>
+      <div class="insta-item"><img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=400&q=80&fit=crop" alt="Instagram 3" loading="lazy" /><div class="insta-overlay">&#128247;</div></div>
+      <div class="insta-item"><img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=400&q=80&fit=crop" alt="Instagram 4" loading="lazy" /><div class="insta-overlay">&#128247;</div></div>
+      <div class="insta-item"><img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=400&q=80&fit=crop" alt="Instagram 5" loading="lazy" /><div class="insta-overlay">&#128247;</div></div>
+    </div>
+    <div class="brands-strip">
+      <div class="container">
+        <span class="brand-item">SKINCEUTICALS</span>
+        <span class="brand-item">LA MER</span>
+        <span class="brand-item">DERMALOGICA</span>
+        <span class="brand-item">OBAGI</span>
+        <span class="brand-item">AUGUSTINUS BADER</span>
+        <span class="brand-item">TATCHA</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter-section">
+    <div class="container">
+      <div class="newsletter-inner">
+        <div class="newsletter-text reveal-left">
+          <h2 class="section-title">Subscribe to Our <em>Newsletter</em></h2>
+          <p>Get exclusive beauty tips, special promotions, and wellness updates in your inbox.</p>
+        </div>
+        <form class="newsletter-form" onsubmit="event.preventDefault();this.innerHTML='<p style=color:#fff;font-weight:600>&#10003; Thank you for subscribing!</p>'">
+          <input type="email" placeholder="Enter your email address..." required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <span class="logo-script">Serenova</span>
+            <p>Where beauty meets serenity. Dedicated to helping you look and feel your most radiant self through expert care and premium treatments.</p>
+            <div class="footer-social">
+              <a href="#" aria-label="Facebook">f</a>
+              <a href="#" aria-label="Instagram">in</a>
+              <a href="#" aria-label="TikTok">tt</a>
+              <a href="#" aria-label="YouTube">yt</a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="services.html">Our Services</a></li>
+              <li><a href="blog.html">Blog &amp; Tips</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Treatments</h4>
+            <ul class="footer-links">
+              <li><a href="service-details.html">HIFU 7D Lifting</a></li>
+              <li><a href="service-details.html">Luxury HydraFacial</a></li>
+              <li><a href="service-details.html">Cryotherapy Sculpting</a></li>
+              <li><a href="service-details.html">Carbon Laser Peel</a></li>
+              <li><a href="service-details.html">Hot Stone Therapy</a></li>
+              <li><a href="service-details.html">Organic Glow Facial</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contact Info</h4>
+            <div class="footer-contact">
+              <div class="footer-contact-item">
+                <span class="footer-contact-icon">&#128205;</span>
+                <span>123 Wellness Ave, BGC, Taguig City, Metro Manila, Philippines</span>
+              </div>
+              <div class="footer-contact-item">
+                <span class="footer-contact-icon">&#128222;</span>
+                <a href="tel:+639123456789">+63 912 345 6789</a>
+              </div>
+              <div class="footer-contact-item">
+                <span class="footer-contact-icon">&#9993;</span>
+                <a href="mailto:hello@serenova.ph">hello@serenova.ph</a>
+              </div>
+            </div>
+            <div class="footer-hours">
+              <strong>Open Hours</strong>
+              Monday &ndash; Sunday: 9:00 AM &ndash; 8:00 PM
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;">
+        <span>&copy; 2025 Serenova Wellness. All Rights Reserved.</span>
+        <span>Designed with &#9829; for Beauty &amp; Wellness</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOATING BUTTON -->
+  <a href="https://wa.me/639123456789?text=Hi!%20I'd%20like%20to%20book%20a%20consultation%20at%20Serenova%20Wellness." class="wa-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+    <span class="wa-tooltip">Chat on WhatsApp!</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
