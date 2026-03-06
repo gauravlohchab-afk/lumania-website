@@ -92,7 +92,11 @@ input, textarea, select { font-family: inherit; }
 /* ================================================================ NAVBAR */
 .navbar { position: sticky; top: 0; z-index: 999; background: #fff; border-bottom: 1px solid var(--border); height: var(--nav-h); display: flex; align-items: center; transition: box-shadow var(--transition); }
 .navbar.scrolled { box-shadow: var(--shadow-md); }
-.navbar .container { max-width: var(--container); margin:0 auto; }
+.navbar .container {
+    max-width: var(--container);
+    margin: 0 auto;
+    width: 100%;
+}
 .nav-inner { display: flex; align-items: center; justify-content: space-between; width: 100%; }
 .nav-logo { display: flex; flex-direction: column; line-height: 1; }
 .nav-logo .logo-script { font-family: var(--font-script); font-size: 2rem; color: var(--primary); }
